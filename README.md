@@ -2,8 +2,9 @@
 
 A full-stack support ticketing system built with **MongoDB, Express, React, and Node.js** (MERN Stack).
 
-[![Live Demo](https://img.shields.io/badge/Live%20Demo-Render-blue)](https://your-live-url.onrender.com)
-[![GitHub](https://img.shields.io/badge/GitHub-Repository-black)](https://github.com/your-username/ticketing-system)
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Render-blue)](https://ticketing-system-client.onrender.com)
+[![GitHub](https://img.shields.io/badge/GitHub-Repository-black)](https://github.com/Christy17-tech/ticketing-system)
+[![API](https://img.shields.io/badge/API-Render-green)](https://ticketing-system-api-t924.onrender.com/api/health)
 
 ---
 
