@@ -22,11 +22,19 @@ app.use('/api/', limiter);
 // CORS
 const allowedOrigins = [
   process.env.CLIENT_URL || 'http://localhost:5173',
+  'http://localhost:5173',
+  'http://localhost:3000',
 ];
 app.use(
   cors({
     origin: (origin, callback) => {
-      if (!origin || allowedOrigins.includes(origin)) {
+      // Allow requests with no origin (mobile apps, curl, Postman)
+      if (!origin) return callback(null, true);
+      // Allow any onrender.com subdomain or listed origins
+      if (
+        allowedOrigins.includes(origin) ||
+        origin.endsWith('.onrender.com')
+      ) {
         callback(null, true);
       } else {
         callback(new Error('Not allowed by CORS'));
